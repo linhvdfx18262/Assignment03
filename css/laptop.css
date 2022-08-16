@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 12px;
+}
+
+.container {
+  padding: 0 !important;
+}
+
+.row {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 !important;
+}
+
+/* BANNER------------------------------------------------------- */
+
+.banner {
+  height: 60vh;
+
+  background-image: linear-gradient(
+      rgba(52, 58, 64, 0.6),
+      rgba(52, 58, 64, 0.6)
+    ),
+    url(../images/banner.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-text {
+  color: #fff;
+}
+
+/* NAVIGATION---------------------------------------------------------- */
+
+.nav-item:nth-child(odd) {
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
+}
+
+.nav-bar {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.nav-name {
+  min-width: 5rem;
+}
+
+/* PHAN NANG CAO----------------------------------------------------- */
+
+#nav-bar img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  border: solid 0.5rem #fff;
+
+  box-shadow: 0px 0px 0.5rem #343a40;
+}
+
+.nav-name div {
+  visibility: hidden;
+}
+
+/* ABOUT - THONG TIN ---------------------------------------------------- */
+
+.target,
+.empty-target {
+  background-color: #f1f3f5;
+}
+
+.personal-info,
+.empty-personal-info {
+  background-color: #dee2e6;
+}
+
+.info span {
+  font-weight: bold;
+}
+
+.empty-personal-info,
+.empty-target {
+  flex-grow: 1;
+}
+
+.target,
+.personal-info {
+  width: 500px;
+}
+
+/* JOB-INFO LY LICH ------------------------------------------------------- */
+
+.ly-lich-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.ly-lich-box {
+  border: 1px solid #dee2e6;
+}
+
+.ly-lich-box header i {
+  font-size: 4rem;
+}
+
+.ly-lich-box h5 {
+  position: relative;
+}
+
+.ly-lich-box .content h5::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 10px;
+  left: -30px;
+}
+
+.ly-lich-box .content ul {
+  list-style-type: " - ";
+  list-style-position: inside;
+}
+
+.kinh-nghiem-box .content,
+.hoc-van-box .content,
+.hoat-dong-box .content {
+  margin-left: 30px;
+}
+
+.so-thich-icon {
+  width: 5rem;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.so-thich-icon i {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  color: #0d6efd;
+  border: 1px solid #0d6efd;
+  border-radius: 50%;
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* THANH KY NANG */
+
+.level1,
+.level2,
+.level3 {
+  display: inline-block;
+  height: 4px;
+  width: 50px;
+  background-color: #ced4da;
+  border-radius: 10px;
+}
+
+.level {
+  margin-top: 8px;
+  margin-bottom: 24px;
+
+  display: flex;
+  gap: 10px;
+}
+
+.level-tieng-viet .level1,
+.level-tieng-viet .level2,
+.level-tieng-viet .level3 {
+  background-color: #0d6efd;
+}
+
+.level-tieng-anh .level1,
+.level-tieng-anh .level2 {
+  background-color: #0d6efd;
+}
+
+.level-html-css .level1 {
+  background-color: #0d6efd;
+}
+
+/* CERTIFICATE----------------------------------------------------- */
+
+.bg-grey {
+  background-color: #f1f3f5;
+}
+
+.certificate-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.certificate-img {
+  width: 40%;
+}
+
+.certificate-box ul {
+  list-style-type: " - ";
+  list-style-position: inside;
+}
+
+.certificate-box:not(:last-child) {
+  border-bottom: solid 1px #ffc078;
+}
+
+.certificate-javascript {
+  position: relative;
+}
+
+.certificate-javascript::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: auto;
+  left: 0;
+  top: 1rem;
+  bottom: 1rem;
+  background-color: #ffc078;
+}
+
+/* PROJECT--------------------------------------------------- */
+
+.project-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* PROJECT BOX TABLE */
+
+.project-table {
+  width: 100%;
+}
+
+.project-table th {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.project-table td {
+  vertical-align: top;
+
+  border-top: 1px solid #717579;
+  border-bottom: 1px solid #717579;
+  border-collapse: collapse;
+}
+
+.project-table {
+  border: 1px solid #717579;
+  border-collapse: collapse;
+}
+
+.project-table-last-row {
+  flex-grow: 1;
+}
+
+.project-table-last-row,
+.project-table-last-row td {
+  border-top: none;
+}
+
+.project-table th,
+.project-table td {
+  padding: 0.5rem;
+}
+
+/* FOOTER---------------------------------------------------------------- */

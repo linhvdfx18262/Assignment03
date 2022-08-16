@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-cyan {
+  background-color: #e3fafc;
+}
+
+h1 {
+  border-bottom: 1px solid #868e96;
+  padding-bottom: 1rem;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.back-to-cv:link,
+.back-to-cv:visited,
+.back-to-cv:hover,
+.back-to-cv:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* MAIN GRID----------------------------------------------------------------- */
+
+.body-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+
+  max-width: 1600px;
+  margin: 25px auto;
+
+  box-shadow: 0 0 20px #343a40;
+}
+
+@media (max-width: 1200px) {
+  .body-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.goals {
+  grid-area: 1/1/2/2;
+}
+
+.scopes {
+  grid-area: 2/1/3/2;
+}
+
+.team {
+  grid-area: 1/2/2/3;
+}
+
+.primary {
+  grid-area: 2/2/3/3;
+}
+
+.timeline {
+  grid-area: 1/3/3/4;
+}
+
+/* GOALS----------------------------------------------------------------- */
+
+.goals-container {
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* TEAM----------------------------------------------------------------- */
+
+.team-member-icon i {
+  font-size: 2rem;
+}
+
+/* TIMELINE-------------------------------------------------------------- */
+
+.timeline-number {
+  font-size: 2rem;
+  color: #fff;
+
+  background-color: #9775fa;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 2px solid #868e96;
+
+  flex-shrink: 0;
+}
+
+.timeline-describe {
+  border-bottom: 1px dashed #15aabf;
+
+  flex-grow: 1;
+}

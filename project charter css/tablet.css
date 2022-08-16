@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+  .body-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* TEAM */
+
+  .team-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

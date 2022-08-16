@@ -1,0 +1,34 @@
+@media (max-width: 768px) {
+  /* NAVIGATION------------------------------------------------- */
+
+  .nav-name div {
+    display: none;
+  }
+
+  .nav-img {
+    display: none;
+  }
+
+  /* ABOUT THONG TIN ------------------------------------------- */
+
+  .target,
+  .personal-info {
+    width: 50%;
+  }
+
+  /* JOB-INFO LY LICH ------------------------------------------ */
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* CERTIFICATE --------------------------------------------- */
+
+  .certificate-box {
+    flex-direction: column;
+  }
+
+  .certificate-img {
+    width: 100%;
+  }
+}

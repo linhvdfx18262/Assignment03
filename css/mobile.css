@@ -1,0 +1,62 @@
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+
+  /* NAVIGATION --------------------------------------------- */
+
+  .nav-name {
+    display: none;
+  }
+
+  .nav-item {
+    border: none !important;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .nav-bar li {
+    padding-left: 5rem;
+  }
+
+  /* ABOUT THONG TIN ---------------------------------------- */
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .target,
+  .personal-info {
+    width: 100%;
+  }
+
+  /* JOB-INFO LY LICH ------------------------------------------ */
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CERTIFICATE ------------------------------------------------- */
+
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-javascript::before {
+    display: none;
+  }
+
+  /* PROJECT--------------------------------------------------------- */
+
+  .project-all-box {
+    flex-direction: column;
+  }
+
+  /* FOOTER --------------------------------------------------------- */
+
+  .footer-container span {
+    display: none;
+  }
+}

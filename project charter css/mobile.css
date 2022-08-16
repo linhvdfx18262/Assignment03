@@ -1,0 +1,24 @@
+@media (max-width: 480px) {
+  /* GOALS */
+
+  .goals-icon {
+    display: none;
+  }
+
+  /* SCOPES */
+
+  .scopes-flex {
+    flex-direction: column;
+  }
+
+  /* TEAM */
+
+  .team-member-icon {
+    display: none;
+  }
+
+  .team-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
